@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image:  url(image/background.jpg);
+    height: 100vh;
+    width: 100%;
+    /* ---------------------- */
+    background-size: cover;
+    background-position: center;
+    /* Toàn màn hình, không nhường không gian */
+    position: relative;
+    overflow: hidden;
+    /* tránh tràn màn hình khi có phần tử thuộc tính âm */
+    /* overflow hidden khi dùng sẽ không dùng được thanh cuốn dọc */
+}
+.water{
+    width: 100%;
+    height: 220px;
+    /* ----------- */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* đưa phần tử xuống dưới màn hình */
+}
+.ocean{
+    height: 100%;
+    /* ------------------ */
+    position: absolute;
+    right: 0;
+    /* đưa phần tử xuống dưới màn hình */
+    animation: ocean 10s linear infinite;
+}
+@keyframes ocean{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+.boat{
+    width: 350px;
+    /* ------------------ */
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* set vị trí */
+}
+.boat img{
+    width: 100%;
+    /* ----------------- */
+    -webkit-box-reflect: below 0 linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.6));
+    animation: boat 2s linear infinite;
+    /* tạo phần tử đối lập cùng cơ chế */
+}
+@keyframes  boat{
+    0%{
+        transform: rotate(0deg) translateY(0);
+    }
+    25%{
+        transform: rotate(-1deg) translateY(-3px);
+    }
+    50%{
+        transform: rotate(0deg) translateY(-5px);
+    }
+    75%{
+        transform: rotate(1deg) translateY(-3px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }
+}
+.cloud{
+    height: 250px;
+    /* --------------- */
+    position: absolute;
+    right: 0;
+    /* set vị trí */
+    animation: cloud 10s infinite linear;
+}
+@keyframes cloud{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(400px);
+    }
+}

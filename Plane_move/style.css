@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%; 
+    background-image: url(images/background.jpg);
+    /* ----- */
+    background-size: cover;
+    background-position: center;
+    /* ảnh full màn hình không chia không gian cho các thành phần div hình khác */
+    position: relative;
+    overflow: hidden;
+    /* tránh tràn màn hình khi có phần tử mang thuộc tính âm */
+}
+.runway{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/road.jpg);
+    /* ------ */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* kéo hình xuống dưới, trái */
+}
+.airplane{
+    width: 500px;
+    /* ------ */
+    position: absolute;
+    right: -200px;
+    bottom: 150px;
+    /* kéo hình xuống dưới cách viền 150px, phải cách viền -200px */
+    animation: plan  4s linear infinite;
+    /* animation biến plan chạy trong 4s, tuyến tính (k co dựt khi đổi tranform), lập vô hạn */
+}
+@keyframes plan {
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform: translateX(-500px) translateY(0px) rotate(0deg);
+    }
+    100%{
+        transform: translateX(-1500px) translateY(-200px) rotate(20deg);
+    }
+    /* rotate: nghiên với ??deg */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h3 class="header">Tip Calculation</h3>
+            <form class="input-form">
+                <div class="input-el">
+                    <span>Total Bill</span>
+                    <input type="text"  id="total">
+                </div>
+                <div class="input-el">
+                    <span>Service</span>
+                    <select  id="service">
+                        <option value="0.05">5% - Terrible</option>
+                        <option value="0.1">10% - Bad</option>
+                        <option value="0.15">15% - So Ok</option>
+                        <option value="0.2">20% - Good</option>
+                        <option value="0.3">30% - Outstanding</option>
+
+                    </select>
+                </div>
+                <div class="input-el">
+                    <span>People Sharing</span>
+                    <input type="text" id="sharing">
+                </div>
+                <div class="btn">
+                    <span id="calculate-btn">Calculate</span>
+                </div>
+                <div class="showTip" id="showTip">
+                    <h3 class="numberText" id="show">00 $</h3>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

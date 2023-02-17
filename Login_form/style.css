@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Image/e721597c236bd135887a.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+.wrapper .box-login{
+    width: 320px;
+    height: 420px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+}
+.box-login .accont-img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -50px;
+}
+.box-login .heading{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+.box-login .title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+.box-login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box-login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: 12px 8px ;
+    color: darkgray;
+    font-size: 16px;
+    outline: none;
+}
+.box-login input[type="submit"]{
+    height: 40px;
+    border-radius: 20px;
+    background-color: lightcoral;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+.box-login input[type="submit"]:hover{
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+.box-login .linked{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.box-login .linked:hover{
+    color: orange;
+}

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    font-size: 45px;
+}
+.content{
+    text-align: center;
+    position: relative;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px 0;
+}
+.time{
+    font-size: 45px;
+    width: 100px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+}
+.detail{
+    padding: 5px 0;
+    font-size: 20px;
+}
